@@ -1,0 +1,133 @@
+#feature {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+
+    p {
+        margin: auto;
+        font-size: 20px;
+        color: #009688;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            width: 50px;
+            height: 35px;
+            background: linear-gradient(#019587, #fff);
+            position: absolute;
+            left: 0;
+            top: -20px;
+            z-index: -1;
+            transform: rotate(10deg);
+            border-top-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+
+        }
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: -10px;
+    }
+}
+
+.feature-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .features {
+        flex-basis: 50%;
+
+        h1 {
+            text-align: left;
+            margin-bottom: -10px;
+            font-weight: 300;
+            color: #009688;
+        }
+    }
+
+    .features-img {
+        flex-basis: 50%;
+        margin: auto;
+
+        img {
+            width: 70%;
+            border-radius: 10px;
+        }
+    }
+}
+
+.features-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature-icon {
+    .fa-shield-halved {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 50px;
+        border-radius: 8px;
+        color: #009688;
+        border: 1px solid #009688;
+    }
+
+    .fa-peso-sign {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 50px;
+        border-radius: 8px;
+        color: #009688;
+        border: 1px solid #009688;
+    }
+
+    .fa-check-to-slot {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 50px;
+        border-radius: 8px;
+        color: #009688;
+        border: 1px solid #009688;
+    }
+}
+
+.feature-text {
+    p {
+        padding: 0 20px;
+        text-align: initial;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .title-text h1 {
+        font-size: 35px;
+    }
+
+    .feature-box {
+        .features{
+            flex-basis: 100%;
+        }
+        .features-img {
+            flex-basis: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

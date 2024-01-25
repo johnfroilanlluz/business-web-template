@@ -1,0 +1,15 @@
+<div id="sideNav" [style.right]="sideNavRight">
+  <nav>
+    <ul>
+      <li><a href="#" routerLink="/home">HOME</a></li>
+      <li><a href="#" routerLink="/features">FEATURES</a></li>
+      <li><a href="#" routerLink="/services">SERVICES</a></li>
+      <li><a href="#" routerLink="/testimonials">TESTIMONIALS</a></li>
+      <li><a href="#" routerLink="/contact">MEET US</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div id="menuBtn" (click)="toggleSideNav()">
+  <img [src]="ImagePath" alt="" id="menu" />
+</div>

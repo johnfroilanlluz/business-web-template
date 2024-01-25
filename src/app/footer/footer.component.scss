@@ -1,0 +1,119 @@
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+
+    p {
+        margin: auto;
+        font-size: 20px;
+        color: #009688;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            width: 50px;
+            height: 35px;
+            background: linear-gradient(#019587, #fff);
+            position: absolute;
+            left: 0;
+            top: -20px;
+            z-index: -1;
+            transform: rotate(10deg);
+            border-top-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+
+        }
+    }
+}
+
+#footer {
+
+    padding:  100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h1{
+        margin: 10px 0;
+    }
+    p{
+        line-height: 35px;
+    }
+}
+.footer-left,.footer-right{
+    flex-basis:45% ;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.footer-right{
+    text-align: right;
+}
+
+.footer-left,.footer-right{
+    .fa-regular{
+        font-size: 20px;
+        color: #009688;
+        margin: 10px;
+    }
+    .fa-solid{
+        font-size: 20px;
+        color: #009688;
+        margin: 10px;
+    }
+
+}
+.footer-img{
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.social-links{
+    text-align: center;
+
+    .fa-brands{
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        line-height: 40px;
+        border: 1px solid #009688;
+        margin: 40px 5px 0;
+        color: #009688;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover{
+            background: #009688;
+            color: #fff;
+            transform: translateY(7px);
+        }
+    }
+    p{
+        font-size: 12px;
+        margin-top: 20px;
+
+    }
+}
+
+@media screen and (max-width: 770px){
+    .footer-left,.footer-right{
+        flex-basis:100% ;
+        font-size: 12px;
+        
+    }
+    .footer-img{
+        top: 25%;
+
+    }
+}
